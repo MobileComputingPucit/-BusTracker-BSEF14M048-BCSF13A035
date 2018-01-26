@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/content_main"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.bus.four.bustracker.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+   <include layout="@layout/activity_maps" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Search..."
+        android:singleLine="true"
+        android:padding="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/location_icon2"
+        android:id="@+id/loc_icon_2"
+        android:background="@drawable/rounded_edittext2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="20dp"
+        />
+
+
+</android.support.constraint.ConstraintLayout>

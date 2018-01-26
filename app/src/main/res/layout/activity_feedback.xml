@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_theme"
+    tools:context="com.bus.four.bustracker.activity_feedback">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feedback"
+            android:textSize="30dp"
+            android:id="@+id/feedback"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="80dp"
+            />
+        <EditText
+            android:id="@+id/etUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_top_bg"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="60dp"
+            android:hint="Email"
+            android:layout_below="@id/feedback"
+            android:drawableRight="@drawable/email_icon"/>
+        <EditText
+            android:id="@+id/etcomment"
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edittext_top_bg"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:layout_below="@id/etUserName"
+            android:hint="Comments..."
+            android:gravity="top"
+            android:password="true"
+
+            />
+        <Button
+            android:id="@+id/btnsubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:text="Submit"
+            android:layout_below="@id/etcomment"
+            android:background="@drawable/edittext_top_bg"/>
+
+    </RelativeLayout>
+</ScrollView>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_theme"
+    tools:context="com.bus.four.bustracker.activity_forgot_pass">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reset Password"
+                android:textSize="30dp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="100dp"
+                />
+            <EditText
+                android:id="@+id/etUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_top_bg"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="Email"
+                android:layout_centerInParent="true"
+
+                android:drawableRight="@drawable/email_icon"/>
+
+            <Button
+                android:id="@+id/btnSingIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/etUserName"
+                android:layout_alignStart="@id/etUserName"
+                android:layout_below="@+id/etUserName"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/edittext_top_bg"
+                android:padding="10dp"
+                android:text="Send Email"
+                android:textStyle="bold" />
+        </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

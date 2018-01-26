@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_theme"
+    tools:context="com.bus.four.bustracker.activity_faq">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FAQ's"
+            android:textSize="30dp"
+            android:id="@+id/feedback"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/q1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/feedback"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="5dp"
+            android:textColor="#FFFFFF"
+            android:text="Q1. Is the Schedule is fix?"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@id/q1"
+            android:id="@+id/a1"
+            android:layout_marginTop="2dp"
+            android:textColor="#FFFFFF"
+            android:text="Ans: No, it may vary."
+            android:textSize="5dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/a1"
+            android:id="@+id/q2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:textColor="#FFFFFF"
+            android:text="Q2. Can persons from outside the Organization can be registered?"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_below="@id/q2"
+            android:id="@+id/a2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:textColor="#FFFFFF"
+            android:text="Ans: No, Only the authorized persons from an organization can travel in the bus"
+            android:textSize="5dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/a2"
+            android:id="@+id/q3"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:textColor="#FFFFFF"
+            android:text="Q3. Can i delete my account myself?"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_below="@id/q3"
+            android:id="@+id/a3"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:textColor="#FFFFFF"
+            android:text="Ans: No,you can't delete your own account only admin have that previlege"
+            android:textSize="5dp"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
